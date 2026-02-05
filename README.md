@@ -1,17 +1,77 @@
-# React + Vite
+# 💻 MacBook Pro Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banner](./public/banner.png)
 
-Currently, two official plugins are available:
+A premium, high-performance product landing page inspired by Apple's iconic design language. This project showcases the MacBook Pro (M4) using cutting-edge web technologies including **React**, **Three.js** (for 3D rendering), and **GSAP** (for cinematic animations).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## React Compiler
+- **3D Product Viewer**: Interactive 3D model of the MacBook Pro using `@react-three/fiber` and `@react-three/drei`.
+- **Cinematic Animations**: Smooth, scroll-triggered transitions and effects powered by **GSAP** and **ScrollTrigger**.
+- **Dynamic Showcase**: Video-masked sections and immersive high-resolution graphics.
+- **Performance Optimized**: Built with **Vite** for lightning-fast development and optimized production builds.
+- **Responsive Design**: Fully adaptive layout for mobile, tablet, and desktop using **Tailwind CSS**.
+- **Apple Aesthetics**: Sophisticated typography, glassmorphism, and a minimalist dark theme.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React 19](https://react.dev/)
+- **3D Engine**: [Three.js](https://threejs.org/) with [React Three Fiber](https://r3f.docs.pmnd.rs/)
+- **Animation**: [GSAP](https://gsap.com/) (GreenSock Animation Platform)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://docs.pmnd.rs/zustand/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# mac_book-website
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/WalidRAMTANI/mac_book-website.git
+   cd mac_book-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📂 Project Structure
+
+```text
+├── components/         # React components (Hero, Showcase, 3D Models)
+│   ├── model/          # 3D Model logic and assets
+│   └── three/          # Custom Three.js hooks/helpers
+├── constants/          # Static data and configuration
+├── public/             # Static assets (3D models, videos, images)
+├── src/
+│   ├── App.jsx         # Main application entry point
+│   ├── index.css       # Global styles and Tailwind directives
+│   └── main.jsx        # React DOM initialization
+├── store/              # Zustand state stores
+└── vite.config.js      # Vite configuration
+```
+
+## 📜 License
+
+This project is for educational purposes. All product designs and trademarks are property of Apple Inc.
+
+---
+
+Built with ❤️ by [Walid RAMTANI](https://github.com/WalidRAMTANI)
